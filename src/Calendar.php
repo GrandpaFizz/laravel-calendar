@@ -31,12 +31,14 @@ class Calendar
      * @var array
      */
     protected $defaultOptions = [
-        'header' => [
+        'initialView'=> 'dayGridMonth',
+        'height' => 'auto',
+        'headerToolbar' => [
             'left' => 'prev,next today',
             'center' => 'title',
-            'right' => 'month,agendaWeek,agendaDay',
+            'right' => 'dayGridMonth,dayGridWeek,listWeek',
         ],
-        'eventLimit' => true,
+        'dayMaxEventRows' => true,
     ];
 
     /**
