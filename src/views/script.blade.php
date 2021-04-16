@@ -1,6 +1,6 @@
 <script>
     var calendar;
-    $(document).ready(function(){
+    document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar-{{ $id }}')
         calendar = new FullCalendar.Calendar(calendarEl,
             {!! $options !!},
